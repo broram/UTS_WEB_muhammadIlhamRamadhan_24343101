@@ -1,0 +1,203 @@
+/* ===== GLOBAL STYLE ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+    transition: all 0.3s ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Judul Halaman */
+h1 {
+    text-align: center;
+    color: #00796b;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* Grid Responsive Layout */
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Form Stylish */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+select:focus {
+    border-color: #26a69a;
+    box-shadow: 0 0 10px rgba(38, 166, 154, 0.3);
+}
+
+form input[type="submit"] {
+    background-color: #26a69a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #00796b;
+    transform: scale(1.03);
+}
+
+/* Tabel Stylish */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #e0f2f1;
+    color: #004d40;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Link & Menu */
+a {
+    color: #26a69a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #00796b;
+    text-decoration: underline;
+}
+
+.menu-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00796b;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.menu-link:hover {
+    transform: scale(1.05);
+    color: #004d40;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .container {
+    background-color: #1e1e1e;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode table th {
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+body.dark-mode table td {
+    background-color: #1f1f1f;
+    color: #eee;
+}
+
+body.dark-mode form {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+}
+
+body.dark-mode input[type="submit"] {
+    background-color: #00b894;
+}
+
+body.dark-mode a {
+    color: #00cec9;
+}
+
+body.dark-mode .menu-link {
+    color: #00cec9;
+}
+
+/* Dark Mode Button */
+.dark-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #26a69a;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.dark-toggle:hover {
+    background-color: #00796b;
+}
